@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .navbar {
+            background-color: #0b1a30;
+            padding: 15px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #00aaff;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            color: #00aaff;
+            border-bottom: 2px solid #00aaff;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #004080;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #ccc;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0077cc;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">SuperTech</div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <h2>Contact Us</h2>
+
+    <div class="contact-form">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SuperTech Inc.</p>
+        <p>123 Tech Street, Pune, India</p>
+        <p>Email: contact@supertech.com | Phone: +91 98765 43210</p>
+        <p>Working Hours: Mon–Fri, 9:00 AM – 6:00 PM</p>
+        <p>Follow us on: LinkedIn | Twitter | Instagram</p>
+        <p>
+            SuperTech is a trusted provider of automation solutions across industries like Paints, Chemicals,
+            Pharmaceuticals, and more.
+            We specialize in batch process automation, system integration, and industrial control systems.
+        </p>
+        <p>
+            Quick Links:
+            <a href="about.html" style="color: #00aaff;">About</a> |
+            <a href="services.html" style="color: #00aaff;">Services</a> |
+            <a href="contact.html" style="color: #00aaff;">Contact</a>
+        </p>
+    </footer>
+</body>

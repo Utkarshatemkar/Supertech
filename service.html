@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .navbar {
+            background-color: #0b1a30;
+            padding: 15px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #00aaff;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            color: #00aaff;
+            border-bottom: 2px solid #00aaff;
+        }
+
+
+        .services-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            font-size: 18px;
+            color: #004080;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .card-content button {
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .card-content button:hover {
+            background-color: #0077cc;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">SuperTech</div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="services-section">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+
+            <div class="card">
+                <img src="https://supertech.co.in/wp-content/uploads/2024/02/service1.jpg">
+                <div class="card-content">
+                    <h3>Best innovations in metallurgy</h3>
+                    <p>Consectetuer adipiscing elit tellus ullamcorper mattis.</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://supertech.co.in/wp-content/uploads/2024/02/service2.jpg">
+                <div class="card-content">
+                    <h3>Fuel & Gas management</h3>
+                    <p>Consectetuer adipiscing elit tellus ullamcorper mattis.</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://supertech.co.in/wp-content/uploads/2024/02/service3.jpg">
+                <div class="card-content">
+                    <h3>Manufacturer of tin lead and lead</h3>
+                    <p>Consectetuer adipiscing elit tellus ullamcorper mattis.</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://supertech.co.in/wp-content/uploads/2024/02/service4.jpg">
+                <div class="card-content">
+                    <h3>Manufacturing Solutions</h3>
+                    <p>Consectetuer adipiscing elit tellus ullamcorper mattis.</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 SuperTech Inc.</p>
+        <p>123 Tech Street, Pune, India</p>
+        <p>Email: contact@supertech.com | Phone: +91 98765 43210</p>
+        <p>Working Hours: Mon–Fri, 9:00 AM – 6:00 PM</p>
+        <p>Follow us on: LinkedIn | Twitter | Instagram</p>
+        <p>
+            SuperTech is a trusted provider of automation solutions across industries like Paints, Chemicals,
+            Pharmaceuticals, and more.
+            We specialize in batch process automation, system integration, and industrial control systems.
+        </p>
+        <p>
+            Quick Links:
+            <a href="about.html" style="color: #00aaff;">About</a> |
+            <a href="services.html" style="color: #00aaff;">Services</a> |
+            <a href="contact.html" style="color: #00aaff;">Contact</a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperTech Automation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #0b1a30;
+            padding: 15px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: #00aaff;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #00aaff;
+            border-bottom: 2px solid #00aaff;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(to right, #0b1a30, #004080);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .btn {
+            background-color: #00aaff;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0088cc;
+        }
+
+        /* About */
+        .about {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        .about img {
+            width: 60%;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        /* Services */
+        .services {
+            background-color: #e6f2ff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 280px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 20px auto;
+            gap: 10px;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .responseMsg {
+            color: green;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0b1a30;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #00aaff;
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .about img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">SuperTech</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Leading Automation Solutions for Modern Industries</h1>
+            <p>
+                SuperTech provides intelligent and cost-effective automation systems
+                for Paints, Resins, Pharma, and Chemical Industries.
+            </p>
+            <button class="btn" id="learnMore">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            We are a trusted automation solution provider serving various industries like Paints, Resins, Lubricants,
+            Agrochemicals, and Pharmaceuticals. Our systems are designed with precision and efficiency to ensure smooth,
+            reliable production processes.
+        </p>
+        <img src="https://supertech.co.in/wp-content/uploads/2024/08/specialty-chemicals.jpg"
+            alt="SuperTech Automation" />
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Core Services</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>Automation Design</h3>
+                <p>Customized control systems for industrial batch processes.</p>
+            </div>
+            <div class="service-card">
+                <h3>System Integration</h3>
+                <p>Seamless integration with MES, ERP, and energy management systems.</p>
+            </div>
+            <div class="service-card">
+                <h3>Electrical Installation</h3>
+                <p>Professional wiring, MCC panels, and instrumentation setup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p class="responseMsg"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SuperTech Automation Pvt. Ltd. | Pune, India</p>
+        <p>Email: contact@supertech.com | Phone: +91 98765 43210</p>
+        <p>
+            Follow us:
+            <a href="#">LinkedIn</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Highlight active section in navbar on scroll
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop - 60;
+                if (scrollY >= sectionTop) current = section.getAttribute("id");
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("active");
+                }
+            });
+        });
+
+        // Learn More button - smooth scroll to About section
+        document.getElementById("learnMore").addEventListener("click", () => {
+            document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+        });
+
+        // Contact form message simulation
+        const form = document.getElementById("contactForm");
+        const responseMsg = document.querySelector(".responseMsg");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            responseMsg.textContent = "✅ Message sent successfully!";
+            form.reset();
+        });
+    </script>
+</body>
+
+</html>
